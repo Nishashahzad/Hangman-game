@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(234, 0, 255);
+}
+
+
+@media(max-width:1200px){
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+@media(max-width: 770px){
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+@media(max-width: 550px){
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+.container {
+  font-size: 16px;
+  background-color: #ffffff;
+  width: 500px;
+  height: 90vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.6em;
+  box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+}
+
+#options-container {
+  text-align: center;
+}
+
+#options-container div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 0 2.4em 0;
+}
+
+#options-container button {
+  padding: 0.6em 1.2em;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 0.3em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#options-container button:disabled {
+  border: 3px solid #808080;
+  color: #808080;
+  background-color: #efefef;
+}
+
+#options-container button.active {
+  background-color: #ecb2fa;
+  border: 3px solid #000000;
+  color: #000000;
+}
+
+.letter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+#letter-container button {
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 0.3em;
+  background-color: #ffffff;
+}
+
+#letter-container button:hover {
+  background-color: #ecb2fa;
+  color: white;
+  cursor: pointer;
+}
+
+.new-game-popup {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
+}
+
+.hide {
+  display: none;
+}
+
+#user-input-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#result-text h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#result-text p {
+  font-size: 21px;
+  margin: 1em 0 2em 0;
+}
+
+#result-text span {
+  font-weight: 600;
+}
+
+#new-game-button {
+  padding: 0.3rem;
+  border-radius: 5%;
+  background-color: white;
+  color: #000000;
+  border: 1px solid black;
+  font-size: 23px;
+}
+
+#new-game-button:hover {
+  background-color: #ecb2fa;
+  color: white;
+  cursor: pointer;
+}
+.win-msg{
+  color: red;
+}
+.lose-msg{
+  color: red;
+}
+
